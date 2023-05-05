@@ -1,0 +1,70 @@
+<!--
+Name:Yandoh
+Pawprint:ytk8mp
+Date:9/24/20
+Challenge: Flex Box F20
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>ytk8mpFlexBoxF20</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <nav>
+        <ul id="navi">
+            <li>
+                <div class="name"><a href = "index.html">Yandoh Keno</a></div>
+            </li>
+            <li>
+                <div class="skills"><a href = "ytk8mpColumnsF20.html">Skills</a></div>
+                
+            </li>
+            <li>
+                <div class="classestaken"><a href = "ytk8mpTablesF20.html">Classes Taken</a></div>
+            </li>
+             <li>
+                <div class="projects"><a id="current" href = "ytk8mpProjectsF20.html">Projects</a></div>
+            </li>
+              </ul>
+        </nav>
+        
+        <div id="cardcontainer" class="clear">
+            
+            <div class="card">
+                <img class="cardimg" src="program%20working.JPG" alt="cake">
+            <div class="cardtitle">
+                <span>To-Do-List</span>
+                    <hr>
+                </div>
+                    <p class="descrip">To do list project that helps organize school work with priority and custom type tags</p>
+                <a class ="link" href="ytk8mpToDoListF20.html"><p>LINK</p></a>
+            </div>
+            
+            <div class="card">
+            
+                <img  class="cardimg" src="github.png" alt="playground">
+                
+            <div class="cardtitle">
+                    <span>Git Hub</span>
+                    <hr>
+                </div>
+                    <p class="descrip">This is my GitHub</p>
+                 <a class ="link" href="https://github.com/YandohK"><p>LINK</p></a>
+            </div>
+            
+            <div class="card">
+            
+                <img class="cardimg" src="data:image/png;base64,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" alt="ajax">
+                
+            <div class="cardtitle">
+                <span>Mizzou</span>
+                    <hr>
+                </div>
+                    <p class="descrip">This is the University that I go to</p>
+                    <a class ="link"  href="https://missouri.edu/" target="_blank"><p>LINK</p></a>
+            </div>
+        </div>
+    </body>
+</html>

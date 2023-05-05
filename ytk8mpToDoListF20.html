@@ -1,0 +1,76 @@
+<!--
+Name:Yandoh
+Pawprint:ytk8mp
+Date:10/2/20
+Challenge: ToDoListF20
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        
+        <style>
+      
+        </style>
+        <title>ytk8mpToDoListF20</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+        
+         <script src="https://kit.fontawesome.com/8192701e40.js" crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" type="text/css" href="ytk8mpToDoListF20.css" />
+    </head>
+    
+    <body>
+    <div class="topBar">
+      <a href="ytk8mpProjectsF20.html" class="align-left">Back to Projects</a>
+      <button
+        id="themeButton"
+        class="align-right"
+        type="button"
+        onclick="handleTheme()">
+        Dark
+      </button>
+    </div>
+    <br />
+        <h1 id="todolisttitle">To Do List</h1>
+            <div class="todocontainer">
+                <table id="todoList" class="table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todoListBody"></tbody>
+                </table>
+            </div>
+        <br />
+        
+            <div class="formcontainer">
+                <p id="errorMessage">All fields required</p>
+                <h4>Add to the To Do List</h4>
+                <form id="addForm">
+                    <input type="text" id="title" name="tasktitle" placeholder="Title" required>
+                    <select name="type" id="type">
+                        <option disabled selected value>Select Value</option>
+                        <option id="Homework" value="Homework">Homework</option>
+                        <option id="Exams/Test" value="Exams/Test">Exams/Test</option>
+                        <option id="ExtraCredit" value="ExtraCredit">Extra Credit</option>
+                        </select>
+                    <input type="range" id="range" name="range" min="0" max="5" onchange="change()">
+                    <p>Priority: <span id="value" ></span></p>
+                    <input type="date" id="date" required>
+                    <button id="addButton" type="submit">Add to list</button>
+                    <button id="clearButton" type="button" onclick="clearForm()">Clear the Form</button>
+                </form>
+            </div>
+        <script src="ytk8mpToDoListF20.js"></script>
+    </body>
+</html> 

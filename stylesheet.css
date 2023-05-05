@@ -1,0 +1,127 @@
+            .name {
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+                    
+                  }
+            .skills{
+                    
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            .classestaken{
+                    
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            .projects{
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            #navi {
+                    background-color:#F0E68C;
+                    width:100%;
+                    float:left;
+                    top:0;
+                    position:fixed;
+                    padding:0;
+                    left:0;
+                    margin:0;
+                 }
+            #navi > li {
+                    display:inline-block;
+                    padding-right: 20px;
+            }
+            #navi > li > a {
+                text-decoration: none;
+                color:#8B4513;
+            }
+               #current{
+                background-color:peachpuff;
+            }
+            #cardcontainer{
+                flex-wrap:wrap-reverse;
+                width:90%;
+                position:relative;
+                margin-top:100px;
+                margin-left:auto;
+                margin-right:auto;
+                display:flex;
+                overflow:hidden;
+                
+            }
+            .clear:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+            .card{
+                border-width:4px;
+                border-style:solid;
+                border-color:#DAA520;
+                border-radius:20px;
+                width:400px;
+                height:250px;
+                background-color:cornsilk;
+                position:relative;
+                margin-top:5%;
+                margin-bottom:5%;
+                margin-left:auto;
+                margin-right:auto;
+                box-shadow: 20px 10px 10px rgba(0,0,0, 0.5);
+                overflow:hidden;
+                
+            }
+            .cardimg{
+                width:40%;
+                height:100%;
+                border-right:10px dotted #0000CD;
+                float:left;
+                background-size:contain;
+                overflow:hidden;
+            }
+            .cardtitle{
+                margin-top:10px;
+                margin-bottom:10px;
+                font-size:22px;
+                width:55%;
+                float:right;
+                font-family: 'Secular One', sans-serif;/*Font found on Google Fonts*/
+                text-align:center;
+                
+            }
+            .descrip{
+                font-size:20px;
+                width:55%;
+                float:right;
+                text-align:center;
+                margin:auto;
+                word-wrap:normal;
+                overflow-y:auto;
+                height:40%;
+                
+                
+                
+            }
+            .link{
+                float:right;
+                text-align:center;
+                font-size:22px;
+                text-decoration:underline;
+                font-weight:bold;
+                color:limegreen;
+                width:55%;
+                
+                
+            }
+            h3{
+                text-align:center;
+                font-size:20px;
+            }
+            body{
+                background-color:#a3c6d6;
+            }
+         

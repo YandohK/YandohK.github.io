@@ -1,0 +1,273 @@
+<!--
+Name:Yandoh
+Pawprint:ytk8mp
+Date:9/16/20
+Challenge: Tables F20
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <style>
+            .name {
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+                    
+                  }
+            .skills{
+                    
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            .classestaken{
+                    
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            .projects{
+                    font-size: 30px;
+                    font-family: Comic Sans MS, Comic Sans, cursive;
+                    color:#8B4513;
+            }
+            #navi {
+                    background-color:#F0E68C;
+                    width:100%;
+                    float:left;
+                    top:0;
+                    position:fixed;
+                    padding:0;
+                    left:0;
+                    margin:0;
+                 }
+            #navi > li {
+                    display:inline-block;
+                    padding-right: 20px;
+            }
+            #navi > li > a {
+                text-decoration: none;
+                color:#8B4513;
+            }
+               #current{
+                background-color:peachpuff;
+            }
+            
+            .table table-bordered table-striped table-condensed table-hover{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .clear:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+            .table > thead > tr > td > img{
+                width:150px;
+            }
+             .table > thead > tr > td > p{
+                text-align:right;
+            }
+            #wrap{
+                border: 6px solid #3d5c5c;
+                box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+                width:50%;
+                margin-left:auto;
+                margin-right:auto;
+                display:flex;
+                background-color:#e3f6ff;
+                padding:10px;
+                
+            }
+            #column1{
+                width:50%;
+                display: inline-block;
+                float:left;
+            }
+            #column1 > img{
+                border: 6px solid #3d5c5c;
+                margin:10px;
+                width:90%;
+            }
+            #column2{
+                width:30%;
+                display: inline-block;
+                padding:20px;
+                float: left;
+                text-align: center;
+            }
+            #column3{
+                width:40%;
+                display: inline-block;
+                padding:20px;
+                float: left;
+                text-align: center;
+            }
+            #takenz{
+                text-align:center;
+                font-size:30px;
+                font-weight:bold;
+                padding-top:50px;
+            }
+            #intz{
+                font-size:25px;
+                font-weight:bold;
+                padding-right:40px;
+            }
+            #csCELL{
+                background-color:#a3c6d6;
+                
+            }            
+            #itCELL{
+                background-color:#ace1fa;
+                
+            }            
+            #mathCELL{
+                background-color:#d9f0fa;
+                
+            }
+            body{
+                font-family: 'Oswald', sans-serif, 'Balsamiq Sans';
+                background-color:#fffbcf;
+                
+            }
+            hr{
+                border-color:black;
+            }
+
+        </style>
+
+        <title>ytk8mpTablesF20</title>
+    </head>
+    <body>
+        <nav>
+        <ul id="navi">
+            <li>
+                <div class="name"><a href = "index.html">Yandoh Keno</a></div>
+            </li>
+            <li>
+                <div class="skills"><a href = "ytk8mpColumnsF20.html">Skills</a></div>
+                
+            </li>
+            <li>
+                <div class="classestaken"><a id="current" href = "ytk8mpTablesF20.html">Classes Taken</a></div>
+            </li>
+             <li>
+                <div class="projects"><a href = "ytk8mpProjectsF20.html">Projects</a></div>
+            </li>
+              </ul>
+        </nav>
+        <table class="table table-bordered table-striped table-condensed table-hover">
+            <thead>
+                <tr>
+                    <td colspan="7"><p id="takenz">Classes Taken</td>
+                </tr>
+                <tr>
+                    <td colspan="7"><img src="mu-tiger.png" alt=tigerz>
+                    <p id="intz">University of Missouri-Columbia</p></td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <th>Course</th>
+                    <th>Description</th>
+                    <th>Term</th>
+                    <th>Grade</th>
+                    <th>Units</th>
+                    <th>Projects/Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td id="csCELL" rowspan="3">Computer Science</td>
+                <td><strong>Introduction to Computer Science</strong></td>
+                <td>This course introduces the Computer Science field, including the history of computers, career opportunities, and ethical/social issues.  There will be lectures given by MU Computer Science faculty to discuss exciting fields as well as career advisement given by Computer Science industry representatives.  Prerequisites: Restricted to freshman/sophomore students who are BS Computer Science, BS Information Technology and Undeclared Engineering or Pre-Engineering may enroll in the class without permission</td>
+                <td>Fall 2019</td>
+                <td>A+</td>
+                <td>1 Credit Hour</td>
+                <td>Fundamentals of Computer engineering and IT</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Algorithm Design and Programming I</strong></td>
+                    <td>This course provides experience in developing algorithms, designing, implementing programs. Topics include syntax/semantics, flow control, loops, recursion, I/O, arrays, strings and pointers</td>
+                    <td>Fall 2019</td>
+                    <td>A-</td>
+                    <td>4 Credit Hours</td>
+                    <td>Understanding the foundations of the C language/Computer programming.</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Web Application Development I</strong></td>
+                    <td>This course will attempt to provide a comprehensive understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications) will be discussed in detail.</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3 Credit Hours</td>
+                    <td>Protfolio/UserPage</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" id="itCELL">Information Technology</td>
+                    <td><strong>Introduction to Digital Media Design</strong></td>
+                    <td>This project-based course is an introduction to the concepts and practices of audio design, graphic design, motion media design and basic video editing. Current technologies are employed to examine design fundamentals and applications of media design that apply to audio and video production and new media production.</td>
+                    <td>Spring 2020</td>
+                    <td>A-</td>
+                    <td>3 Credit Hours</td>
+                    <td>Knowledge in Adobe programs (Photoshop,Premiere,Illustrator, Etc)</td>
+                </tr>
+                <tr>
+                    <td><strong>Programming Languages and Paradigms</strong></td>
+                    <td>This course presents programming principles and their syntactical representation and implementation across languages including those that are compiled and interpreted. The course shows how to implement algorithms and data structures to solve problems while utilizing paradigms offered by the programming languages such as procedural, object-oriented, protocol-oriented, functional, and declarative. Language support for strong and weak typing and type safety are covered along with support for optional values. Provides experience in developing algorithms and determining their efficiency, designing application architecture, and developing applications. Building and using libraries/application programming interfaces is covered. Git and GitHub are used for code versioning and collaboration. Integrated development environments (IDEs) are used for managing, building, debugging, and testing applications.</td>
+                    <td>Spring 2020</td>
+                    <td>A+</td>
+                    <td>3 Credit Hours</td>
+                    <td>Music Playlist Analyzer</td>
+                </tr>
+                <tr>
+                    <td><strong>Fundamentals of Network Technology</strong></td>
+                    <td>This course includes an overview of networking and the common wireless standards. Graded on A-F basis only.</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3 Credit Hours</td>
+                    <td>Understanding network topologies</td>
+                </tr>
+                <tr>
+                    <td rowspan="1" id="mathCELL">Math</td>
+                    <td><strong>Analytic Geometry and Calculus I</strong></td>
+                    <td>Analytic geometry, functions, limits, continuity, derivatives, antiderivatives, definite integrals.   Honors eligibility required.   A student may receive at most 5 units of credit among  MATH 1320 or MATH 1400 and MATH 1500. Math Reasoning Proficiency course.</td>
+                    <td>Spring 2020</td>
+                    <td>A-</td>
+                    <td>5 Credit Hours</td>
+                    <td>N/A</td>
+                    
+                </tr>
+                </tbody>
+          
+            
+        </table>
+        <div id="wrap" class="clear">
+                <div id="column1">
+                <img src="me.jpg" alt="me">
+                </div>
+                <div id="column2">
+                    <h2><strong>Yandoh Keno</strong></h2>
+                    <hr>
+                        <p><strong>Informational Technologies | Senior</strong></p>
+                        <p><strong>Total Credits | 111</strong></p>
+                </div>
+            <div id="column3">
+                <h2><strong>Contact:</strong></h2>
+                <hr>
+                <p><strong>Email: ytk8mp@umsystem.edu</strong></p>
+                <p><strong>Phone: 573-999-4407</strong></p>
+            </div>
+        </div>
+    </body>
+</html>
